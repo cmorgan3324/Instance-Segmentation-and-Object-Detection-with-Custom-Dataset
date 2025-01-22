@@ -1,18 +1,47 @@
-# Instance Segmentation and Object Detection with Custom Dataset using Mask R-CNN and custom dataset
+# Instance Segmentation and Object Detection with Custom Dataset
 
-## Description
-Evaluate the performance of Trained Mask RCNN using Intersection over Union (IOU) and Average Precision (AP) metrics implemented in COCO API.
+This repository provides an implementation of **instance segmentation and object detection** using **Mask R-CNN** with a custom dataset, utilizing the **Detectron2** framework.
 
-## Key Features
-- **Instance Segmentation and Object Detection:** Advanced methods and algorithms demonstrated in a Jupyter Notebook.
-- **Libraries Used:** matplotlib.pyplot, detectron2.utils.visualizer, google.colab, torch,, detectron2.engine, detectron2.data, detectron2.structures, detectron2.evaluation, =, numpy, detectron2, from, detectron2.utils.logger, google.colab.patches, detectron2.config
-- **Sections Included:**
-    - markdown, markdown, markdown, markdown, markdown, markdown
+## Features
+- Train a pre-trained **Mask R-CNN** model on a custom dataset.
+- Perform **inference and evaluation** using the trained model.
+- **Visualize results** with bounding boxes and segmentation masks.
 
-## How to Use
-1. Clone the repository or download the notebook.
-2. Install the required libraries: `matplotlib.pyplot, detectron2.utils.visualizer, google.colab, torch,, detectron2.engine, detectron2.data, detectron2.structures, detectron2.evaluation, =, numpy, detectron2, from, detectron2.utils.logger, google.colab.patches, detectron2.config`.
-3. Open the notebook using Jupyter and run the cells sequentially.
+## Requirements
+Ensure you have the following dependencies installed before running the notebook:
+```bash
+pip install detectron2 torch torchvision opencv-python matplotlib numpy
+```
 
-## Outputs
-The notebook includes results such as visualizations, predictions, and evaluation metrics for segmentation and detection.
+## Dataset Preparation
+- The notebook expects a custom dataset in COCO format.
+- Modify the dataset registration function to match your dataset annotations.
+
+## Usage
+
+1. **Import and Train the Model**
+   - Load a pre-trained model from **Detectron2's Model Zoo**.
+   - Configure and fine-tune it on the custom dataset.
+
+2. **Inference & Evaluation**
+   - Use the trained model to make predictions.
+   - Evaluate results using COCO metrics.
+
+## Running the Notebook
+Open and run [`Instance_Segmentation_and_Object_Detection.ipynb`](Instance_Segmentation_and_Object_Detection.ipynb) step by step.
+
+## Dependencies Imported in the Notebook
+The notebook utilizes:
+- **Detectron2** (for object detection and segmentation)
+- **PyTorch** (for deep learning computations)
+- **OpenCV** (for image processing)
+- **Matplotlib** (for visualization)
+- **NumPy** (for numerical operations)
+
+## Results
+Once trained, the model generates segmented object masks with bounding boxes on input images.
+
+---
+
+**Author:** [Your Name]  
+For any issues or improvements, feel free to contribute!
