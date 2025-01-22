@@ -1,4 +1,4 @@
-# Instance Segmentation and Object Detection with Custom Dataset
+# Instance Segmentation and Object Detection with Custom Image Dataset
 
 This repository provides an implementation of **instance segmentation and object detection** using **Mask R-CNN** with a custom dataset, utilizing the **Detectron2** framework.
 
