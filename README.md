@@ -42,6 +42,5 @@ The notebook utilizes:
 Once trained, the model generates segmented object masks with bounding boxes on input images.
 
 ---
-
-**Author:** [Your Name]  
+  
 For any issues or improvements, feel free to contribute!
